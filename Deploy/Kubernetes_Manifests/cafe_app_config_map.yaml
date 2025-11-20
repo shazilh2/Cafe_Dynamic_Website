@@ -8,7 +8,7 @@ data:
     $showServerInfo = "true";
     $timeZone = "America/New_York";
     $currency = "£";  // Change currency to Pounds
-    $db_url = "10.32.0.8";  // Use MySQL service name for internal DNS resolution
+    $db_url = "mysql";  // Use MySQL service name for internal DNS resolution
     $db_name = "mom_pop_db";
     $db_user = "root";
     $db_password = "msis@123";
