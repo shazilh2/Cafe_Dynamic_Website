@@ -13,7 +13,7 @@ SQL_SCRIPT="$WORKSPACE/mompopdb/create-db.sql"
 
 DB_NAME="mom_pop_db"
 DB_APP_USER="msis"
-DB_APP_PASSWORD="msis@123"
+DB_APP_PASSWORD="Msois@123"
 DB_HOST="localhost"
 
 APP_PARAMS_FILE="$DEST_DIR/getAppParameters.php"
