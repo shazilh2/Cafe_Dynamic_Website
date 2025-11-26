@@ -1,0 +1,12 @@
+#inside execute shell
+  sudo docker rm -f mompopcafeapp mysql
+  sudo docker-compose up -d
+
+#in terminal
+  sudo docker tag mysql:latest shazilhameed/mysql:latest 
+  sudo docker push shazilhameed/mysql:latest 
+  sudo docker run --name sql -it -d -p 87:80 shazilhameed/mysql:latest 
+
+  sudo docker tag mompopcafeapp:latest shazilhameed/mompopcafeapp:latest 
+  sudo docker push shazilhameed/mompopcafeapp:latest 
+  sudo docker run --name mompop -it -d -p 87:80 shazilhameed/mompopcafeapp:latest 
