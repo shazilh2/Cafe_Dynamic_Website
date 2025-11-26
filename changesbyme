@@ -1,0 +1,3 @@
+
+to change the password of the user 
+alter user 'msis'@'localhost' identified by 'Msois@123';
