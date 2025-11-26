@@ -21,7 +21,7 @@ spec:
         configMap:
           name: app-config
       containers:
-      - image: dvasanth26/mompopcafeapp:latest
+      - image: shazilhameed/mompopcafeapp:latest
         name: cafeweb
         volumeMounts:
         - name: app-config-volume
