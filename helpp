@@ -1,1 +1,43 @@
 can u give me docker commands in excute shell
+
+
+
+
+
+//Dockerfile
+
+FROM node:18-alpine
+
+# Create app directory inside container
+WORKDIR /app
+
+# Copy package metadata and install dependencies
+COPY package*.json ./
+RUN npm install --production --silent
+
+# Copy rest of application code
+COPY . .
+
+# Expose port on which Express serves
+EXPOSE 3000
+
+# Start the app
+CMD ["node", "index.js"]
+
+
+
+
+
+
+//ececuteshell commands
+
+
+sudo docker build -t my-static-node-app .
+
+
+sudo docker run -d -p 3000:3000 --name static-node-app my-static-node-app
+
+
+sudo docker stop static-node-app
+
+sudo docker rm static-node-app
