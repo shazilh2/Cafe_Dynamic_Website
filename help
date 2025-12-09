@@ -1,2 +1,25 @@
 url-https://github.com/shazilh2/sample-static-node-express-web-application.git
 help me with dockerfile and the docker execute shell commands
+
+
+
+
+
+# Use official lightweight Node image
+FROM node:18-alpine
+
+# Create app directory inside container
+WORKDIR /app
+
+# Copy package metadata and install dependencies
+COPY package*.json ./
+RUN npm install --production --silent
+
+# Copy rest of application code
+COPY . .
+
+# Expose port on which Express serves
+EXPOSE 3000
+
+# Start the app
+CMD ["node", "index.js"]
