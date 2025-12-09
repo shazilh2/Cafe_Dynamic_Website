@@ -33,14 +33,14 @@ CMD ["node", "index.js"]
 
 
 
-docker build -t my-static-node-app .
+sudo docker build -t my-static-node-app .
 
 
-docker run -d -p 3000:3000 --name static-node-app my-static-node-app
-
-docker ps
+sudo docker run -d -p 3000:3000 --name static-node-app my-static-node-app
 
 
-docker stop static-node-app
 
-docker rm static-node-app
+
+sudo docker stop static-node-app
+
+sudo docker rm static-node-app
