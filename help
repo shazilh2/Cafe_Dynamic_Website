@@ -23,3 +23,24 @@ EXPOSE 3000
 
 # Start the app
 CMD ["node", "index.js"]
+
+
+
+
+
+
+//ececuteshell commands
+
+
+
+docker build -t my-static-node-app .
+
+
+docker run -d -p 3000:3000 --name static-node-app my-static-node-app
+
+docker ps
+
+
+docker stop static-node-app
+
+docker rm static-node-app
